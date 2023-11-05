@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Libros</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <img src="img/logo.png" alt="Logo de Mi Sitio Web" class="logo" height="50">
+              <input type="checkbox" id="menu"/>
+              <label for="menu">
+                  <img src="img/menu.png" class="menu-icono" alt="menu">
+              </label>
+              <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Servicio</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+             <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="img/bocabesada.png" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>La lectura es un ticket de descuento a todas partes</p>
+                <a href="#" class="btn-1"> Informacion</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/el infierno.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Libro 1</h3>
+                <a href="#" class="btn-2"> Informacion de los libros</a>
+            </div>
+        </div>
+
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/el_principito.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Libro 2</h3>
+                <a href="#" class="btn-2"> Informacion de los libros</a>
+            </div>
+        </div>
+
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="img/harry potter.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Libro 3</h3>
+                <a href="#" class="btn-2"> Informacion de los libros</a>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <main class="products container" id="lista-1">
+        <h2>Libros Mas Buscados</h2>
+
+
+        <div class="product-content">
+
+            <div class="product">
+                <img src="img/juego de tronos.png" alt="">
+                <div class="product-txt">
+                    <h3>Juego de tronos</h3>
+                    <p>La pelea el trono de hierro</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img/la odisea.png" alt="">
+                <div class="product-txt">
+                    <h3>La odisea</h3>
+                    <p>No se de que trata</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img/los_inocentes.png" alt="">
+                <div class="product-txt">
+                    <h3>Los inocentes</h3>
+                    <p>tampoco se de que trata</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img/los_siete_maridos.png" alt="">
+                <div class="product-txt">
+                    <h3>Los siete Maridos</h3>
+                    <p>nisiquiera sabia que existia este libro</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="img/luz negra.png" alt="">
+                <div class="product-txt">
+                    <h3>Luz Negra</h3>
+                    <p>los decapitados</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+
+            <div class="product">
+                <img src="img/no te vere morir.png" alt="">
+                <div class="product-txt">
+                    <h3>no te vere morir</h3>
+                    <p>nisiquiera sabia que existia este libro</p>
+                    <p class="precio">$10</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <section class="icons container">
+
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/i1.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+            </div>
+        </div>
+
+
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+            </div>
+        </div>
+
+
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/i3.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1">
+            <img src="img/por que ami.png" alt="">
+            <h3>Blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                a laudantium praesentium tempore accusantium quia doloremque vitae 
+                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
+                voluptatum dicta minus quia fugit.</p>
+
+        </div>
+
+        <div class="blog-1">
+            <img src="img/spiderman.png" alt="">
+            <h3>Blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                a laudantium praesentium tempore accusantium quia doloremque vitae 
+                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
+                voluptatum dicta minus quia fugit.</p>
+
+        </div>
+
+
+        <div class="blog-1">
+            <img src="img/amandablack.png" alt="">
+            <h3>Blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
+                a laudantium praesentium tempore accusantium quia doloremque vitae 
+                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
+                voluptatum dicta minus quia fugit.</p>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+    <script src="js/script.js"></script>
+</body>
+</html>
