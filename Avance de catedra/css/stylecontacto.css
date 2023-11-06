@@ -272,7 +272,42 @@ textarea.input {
   left: 50%;
   transform: translate(181%, 11%);
   opacity: 0.2;
+
 }
+
+
+
+
+.footer{
+  padding: 50px 0;
+  background-color: #111111;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.link h3{
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: 'Oswald' , sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 16px;
+  color: #DCDCDC;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+
+
+
 
 @media (max-width: 850px) {
   .form {
@@ -358,4 +393,22 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+
+
+
+
+  
+  .footer{
+    padding: 30px;
+}
+
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Register</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/loginestilos.css">
+    <script type="module" src="js/firebaseconect.js"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+          <img src="img/logo.png" alt="Logo de Mi Sitio Web" class="logo" height="50">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Politicas y Servicio</a></li>
+                    <li><a href="imagen.html">Vender Libros</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+                </ul>
+            </nav>
+            <div>
+              <ul>
+                  <li class="submenu">
+                      <img src="img/car.svg" id="img-carrito" alt="carrito">
+                      <div id="carrito">
+                          <table id="lista-carrito">
+                              <thead>
+                                  <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                      <th>Precio</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                          </table>
+                          <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                      </div>
+                  </li>
+              </ul>
+              
+           </div>
+           <a href="login.html">
+              <img src="img/usuario.png" alt="Iniciar sesión" class="login-image">
+          </a>
+        </div>          
+    </header>
+
+        <main>
+
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Aquí</button>
+                        <button id="btn__iniciar-sesion" onclick="google()">Con Google</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo">
+                        <input type="text" placeholder="Correo Electronico">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+        <script src="js/loginscript.js"></script>
+
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Libros de Lectura</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Pregunta Frecuntes</a></li>
+                    <li><a href="#">Politicas de Devolucion</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Otros Enlaces</h3>
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <br><p>&copy; 2023  Copyright. Todos los derechos reservados.</p>
+        <br><p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+
+    </footer>
+</body>
+</html>

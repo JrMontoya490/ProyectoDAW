@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingrese datos de libros que decea vender</title>
     <link rel="stylesheet" href="css/csstyles.css">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyADMnIHPm9rshjOE91F3-XNsh0p7thJQWQ",
+          authDomain: "proyectodaw-63e23.firebaseapp.com",
+          projectId: "proyectodaw-63e23",
+          storageBucket: "proyectodaw-63e23.appspot.com",
+          messagingSenderId: "40309980971",
+          appId: "1:40309980971:web:ca20cb0e10f69e136ccf6e",
+          measurementId: "G-555M5Y48P5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </head>
 <body>
     
@@ -19,12 +42,12 @@
           <nav class="navbar">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicio</a></li>
+                    <li><a href="servicios.html">Politicas y Servicio</a></li>
                     <li><a href="imagen.html">Vender Libros</a></li>
                     <li><a href="contactos.html">Contactos</a></li>
             </ul>
         </nav>
-         <div>
+        <div>
             <ul>
                 <li class="submenu">
                     <img src="img/car.svg" id="img-carrito" alt="carrito">
@@ -44,7 +67,11 @@
                     </div>
                 </li>
             </ul>
+            
          </div>
+         <a href="login.html">
+            <img src="img/usuario.png" alt="Iniciar sesión" class="login-image">
+        </a>
     </div>
 </header>
 
@@ -76,6 +103,51 @@
     <div id="libros">
         <!-- Aquí se mostrarán los libros agregados por los usuarios -->
     </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Libros de Lectura</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Pregunta Frecuntes</a></li>
+                    <li><a href="#">Politicas de Devolucion</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Otros Enlaces</h3>
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <br><p>&copy; 2023  Copyright. Todos los derechos reservados.</p>
+        <br><p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+
+    </footer>
+
+
+
     <script src="js/jsscript.js"></script>
 </body>
 </html>

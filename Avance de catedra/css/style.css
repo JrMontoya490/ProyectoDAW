@@ -36,6 +36,8 @@ img {
     padding: 70px 0;
 }
 
+
+
 .menu{
     position: absolute;
     top: 0;
@@ -355,6 +357,10 @@ th, td {
 
 }
 
+.footer p{
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
 @media  (max-width:991px) {

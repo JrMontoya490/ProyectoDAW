@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Libros</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyADMnIHPm9rshjOE91F3-XNsh0p7thJQWQ",
+          authDomain: "proyectodaw-63e23.firebaseapp.com",
+          projectId: "proyectodaw-63e23",
+          storageBucket: "proyectodaw-63e23.appspot.com",
+          messagingSenderId: "40309980971",
+          appId: "1:40309980971:web:ca20cb0e10f69e136ccf6e",
+          measurementId: "G-555M5Y48P5"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
     
 </head>
 <body>
@@ -19,12 +42,12 @@
               <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicio</a></li>
+                    <li><a href="servicios.html">Politicas y Servicio</a></li>
                     <li><a href="imagen.html">Vender Libros</a></li>
                     <li><a href="contactos.html">Contactos</a></li>
                 </ul>
             </nav>
-             <div>
+            <div>
                 <ul>
                     <li class="submenu">
                         <img src="img/car.svg" id="img-carrito" alt="carrito">
@@ -44,7 +67,11 @@
                         </div>
                     </li>
                 </ul>
+                
              </div>
+             <a href="login.html">
+                <img src="img/usuario.png" alt="Iniciar sesión" class="login-image">
+            </a>
         </div>
 
         <div class="header-content container">
@@ -54,7 +81,7 @@
             <div class="header-txt">
                 <h1>Ofertas Especiales</h1>
                 <p>La lectura es un ticket de descuento a todas partes</p>
-                <a href="#" class="btn-1"> Informacion</a>
+                <a href="#" class="btn-1"> Bocabesada</a>
             </div>
         </div>
     </header>
@@ -67,8 +94,8 @@
                 <img src="img/el infierno.png" alt="">
             </div>
             <div class="ofert-txt">
-                <h3>Libro 1</h3>
-                <a href="#" class="btn-2"> Informacion de los libros</a>
+                <h3>El Infierno</h3>
+                <a href="#" class="btn-2"> Lo que parecía un paraíso se terminó convirtiendo en un infierno.</a>
             </div>
         </div>
 
@@ -78,8 +105,8 @@
                 <img src="img/el_principito.png" alt="">
             </div>
             <div class="ofert-txt">
-                <h3>Libro 2</h3>
-                <a href="#" class="btn-2"> Informacion de los libros</a>
+                <h3>El Principito</h3>
+                <a href="#" class="btn-2"> Fábula mítica y relato filosófico que interroga acerca de la relación del ser humano con su prójimo y con el mundo</a>
             </div>
         </div>
 
@@ -89,8 +116,8 @@
                 <img src="img/harry potter.png" alt="">
             </div>
             <div class="ofert-txt">
-                <h3>Libro 3</h3>
-                <a href="#" class="btn-2"> Informacion de los libros</a>
+                <h3>Harry Potter</h3>
+                <a href="#" class="btn-2">es el primer volumen de la ya clásica serie de novelas fantásticas de la autora británica J.K. Rowling.</a>
             </div>
         </div>
 
@@ -108,8 +135,8 @@
                 <img src="img/juego de tronos.png" alt="">
                 <div class="product-txt">
                     <h3>Juego de tronos</h3>
-                    <p>La pelea el trono de hierro</p>
-                    <p class="precio">$10</p>
+                    <p>Los cinco títulos hasta ahora publicados de «Canción de hielo y fuego», Juego de tronos, Choque de reyes, Tormenta de espadas, Festín de cuervos y Danza de dragones, llegan a las librerías en una nueva edición que conquistará tanto a los fans de esta saga épica.</p>
+                    <p class="precio">$15</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
                 </div>
             </div>
@@ -119,8 +146,8 @@
                 <img src="img/la odisea.png" alt="">
                 <div class="product-txt">
                     <h3>La odisea</h3>
-                    <p>No se de que trata</p>
-                    <p class="precio">$10</p>
+                    <p>Incorporamos a nuestra colección de lecturas clásicas de todos los tiempos una adaptación de La Odisea, con unasmagníficas ilustraciones de Pep Montserrat y un texto de Albert Jané y Rafa Mammos, que, con un lenguaje adecuado,conserva la nobleza y el tono de la narración original.</p>
+                    <p class="precio">$19</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
                 </div>
             </div>
@@ -130,8 +157,8 @@
                 <img src="img/los_inocentes.png" alt="">
                 <div class="product-txt">
                     <h3>Los inocentes</h3>
-                    <p>tampoco se de que trata</p>
-                    <p class="precio">$10</p>
+                    <p>Faltan dos semanas para la boda de la teniente Valentina Redondo y Oliver Gordon. En plenos preparativos, los sorprende la noticia de un atentado masivo en el Templo del Agua del famoso balneario cántabro de Puente Viesgo.</p>
+                    <p class="precio">$25</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
                 </div>
             </div>
@@ -141,8 +168,8 @@
                 <img src="img/los_siete_maridos.png" alt="">
                 <div class="product-txt">
                     <h3>Los siete Maridos</h3>
-                    <p>nisiquiera sabia que existia este libro</p>
-                    <p class="precio">$10</p>
+                    <p>Evelyn Hugo, el icono de Hollywood que se ha recluido a su edad madura, por fin decide contar la verdad sobre su vida llena de glamour y de escándalos</p>
+                    <p class="precio">$14</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
                 </div>
             </div>
@@ -152,8 +179,8 @@
                 <img src="img/luz negra.png" alt="">
                 <div class="product-txt">
                     <h3>Luz Negra</h3>
-                    <p>los decapitados</p>
-                    <p class="precio">$10</p>
+                    <p>Esta obra es un guion de teatro, en el cual se desarrolla una historia acerca de dos hombres, llamados Moter y Goter</p>
+                    <p class="precio">$7</p>
                     <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
                 </div>
             </div>
@@ -164,8 +191,7 @@
                 <img src="img/no te vere morir.png" alt="">
                 <div class="product-txt">
                     <h3>no te vere morir</h3>
-                    <p>nisiquiera sabia que existia este libro</p>
-                    <p class="precio">$10</p>
+                    <p>Durante su juventud, Gabriel Aristu y Adriana Zuber protagonizaron una apasionada historia de amor que parecía destinada a durar para siempre. El futuro, sin embargo, tenía otros planes para ellos.
                     <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
                 </div>
             </div>
@@ -181,11 +207,11 @@
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="img/i1.svg" alt="">
+               
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+                <h3>André Gide, escritor francés</h3>
+                <p>«Ante ciertos libros uno se pregunta: ¿quién los leerá? Y ante ciertas personas uno se pregunta: ¿Qué leerán? Y al fin los libros y las personas se encuentran» </p>
             </div>
         </div>
 
@@ -193,22 +219,22 @@
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="img/i2.svg" alt="">
+              
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+                <h3>André Maurois, novelista y ensayista francés.</h3>
+                <p>«La lectura de un libro es un diálogo incesante, en el que el libro habla y el alma contesta» </p>
             </div>
         </div>
 
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="img/i3.svg" alt="">
+                
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam modi dolor facilis. </p>
+                <h3>Jorge Luis Borges, escritor de cuentos.</h3>
+                <p> «Hay quienes no pueden imaginar un mundo sin pájaros; hay quienes no pueden imaginar un mundo sin agua; en lo que a mí se refiere, soy incapaz de imaginar un mundo sin libros» </p>
             </div>
         </div>
 
@@ -218,32 +244,23 @@
 
         <div class="blog-1">
             <img src="img/por que ami.png" alt="">
-            <h3>Blog 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                a laudantium praesentium tempore accusantium quia doloremque vitae 
-                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
-                voluptatum dicta minus quia fugit.</p>
+            <h3>Por que a mi?</h3>
+            <p>Esta autobiografía de Valéria Piassa presenta las preocupaciones de una adolescente que ha sido diagnosticada con VIH a los dieciocho años. Con humor y varias anécdotas, llevará al lector a conmoverse con un relato que le ayudará a romper con sus prejuicios y a ser más responsable en sus interacciones interpersonales.</p>
 
         </div>
 
         <div class="blog-1">
             <img src="img/spiderman.png" alt="">
-            <h3>Blog 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                a laudantium praesentium tempore accusantium quia doloremque vitae 
-                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
-                voluptatum dicta minus quia fugit.</p>
+            <h3>El asombroso Spiderman</h3>
+            <p>Es más que un cómic: es una máquina del tiempo. Después de su más amarga derrota, después de encontrar las fuerzas necesarias para volver a la carga, el Hombre Araña se enfrenta contra Los Forzadores y El Hombre de Arena, en un épico relato de autoaf</p>
 
         </div>
 
 
         <div class="blog-1">
             <img src="img/amandablack.png" alt="">
-            <h3>Blog 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur 
-                a laudantium praesentium tempore accusantium quia doloremque vitae 
-                obcaecati! Modi nihil explicabo sapiente laudantium harum quos 
-                voluptatum dicta minus quia fugit.</p>
+            <h3>Amanda Black 1</h3>
+            <p>Así arranca la primera novela de la nueva serie middle gradede Juan Gómez-Jurado y Bárbara Montes, que narra las aventuras de Amanda Black, una niña que el día de su décimo tercer cumpleaños recibe una carta misteriosa que cambiará su vida. Y de qué manera.</p>
 
         </div>
 
@@ -255,50 +272,42 @@
         <div class="footer-content container">
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Libros de Lectura</h3>
                 <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    
                 </ul>
             </div>
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Servicio al Cliente</h3>
                 <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Pregunta Frecuntes</a></li>
+                    <li><a href="#">Politicas de Devolucion</a></li>
+                    
                 </ul>
             </div>
 
             <div class="link">
-                <h3>Lorem</h3>
+                <h3>Otros Enlaces</h3>
                 <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    
                 </ul>
             </div>
 
 
         </div>
 
+
+        <br><p>&copy; 2023  Copyright. Todos los derechos reservados.</p>
+        <br><p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+
     </footer>
-    <p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

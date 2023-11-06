@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosser.css">
+    <title>Servicios y Seguridad</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <img src="img/logo.png" alt="Logo de Mi Sitio Web" class="logo" height="50">
+              <input type="checkbox" id="menu"/>
+              <label for="menu">
+                  <img src="img/menu.png" class="menu-icono" alt="menu">
+              </label>
+              <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Politicas y Servicio</a></li>
+                    <li><a href="imagen.html">Vender Libros</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="img/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+                
+             </div>
+             <a href="login.html">
+                <img src="img/usuario.png" alt="Iniciar sesión" class="login-image">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="servicio">
+            <h2>Politicas de Privacidad</h2>
+            <p>Si necesitas un modelo de política de privacidad para web, en Internet se pueden encontrar diferentes plantillas y generadores de las mismas, que te pueden orientar para redactar la política web de tu página.</p>
+            <p>Pero recuerda, estos ejemplos solo deberías usarlos para guiarte y no para copiarlos; tener la política de privacidad gratis puede ser tentador (nada más fácil que copiar o pegar un texto o generarlo con una plantilla), 
+               sin embargo, podrías incurrir en alguna infracción al no incluir en tu política de privacidad toda la información necesaria y pertinente de acuerdo a los tratamientos de datos que vas a realizar en tu web, según tu negocio y actividad y eso podría acarrearte denuncias y sanciones.</p>
+            <p>En cualquier caso, a continuación te mostramos un ejemplo de política de privacidad de página web que cumple con los actuales requisitos del RGPD. Puedes tomar este texto como ejemplo y adaptarlo para la tuya.</p>
+            <p>La política de privacidad web es uno de los textos legales para web y debe estar visible o accesible cuando se vayan a recoger datos personales de los usuarios. Se recomienda separar el aviso legal de la política de privacidad, es decir, 
+               presentarlos en dos textos diferentes en secciones separadas.</p>
+            <p>Para el caso de que nuestra página web recoja datos personales mediante formulario para crear un perfil y dejar un comentario, participar en un foro, inscribirse en una suscripción para recibir newsletter… La política de privacidad online debe estar inmediatamente después del formulario 
+               y justo antes de realizar el registro de datos. Y para que se pueda realizar correctamente y de forma legal el tratamiento de datos de los clientes y usuarios, al final del texto legal del formulario de contacto los usuarios deben marcar expresamente el check box o casilla habilitada 
+               (esta casilla nunca debe aparece premarcada).</p>
+            <p>También se debe incluir un enlace a la política de privacidad desde otros textos legales como la política de cookies, para ofrecer al usuario una segunda capa informativa.</p>
+
+        </section>
+        <section class="servicio">
+            <h2>Seguridad</h2>
+            <P>Seguridad web son las medidas aplicadas para proteger una página web y garantizar que los datos no están expuestos ante los cibercriminales. En este sentido, la seguridad web es un proceso continuo y una parte esencial de administrar un sitio web.</P>
+            <p>La ciberseguridad es importante porque los sitios web desprotegidos están expuestos a sufrir este tipo de ataques, entre otros.</p>
+            <ul>
+                <li>Robo de información confidencial guardada en el servidor web.</li>
+                <li>Explotación de datos personales –desde direcciones de correo electrónico hasta información de pagos– de los visitantes para utilizarlos inadecuadamente (robo de identidad, extorsiones, abuso de confianza, estafas, etc.).</li>
+                <li>Redireccionamiento a páginas web maliciosas.</li>
+                <li>Mostrar anuncios no deseados.</li>
+                <li>Engañar a los bots y rastreadores de los motores de búsqueda para hacer SEO de “sombrero negro” (Black Hat SEO), cuyo objetivo es atraer tráfico a sitios web que no siguen las mejores prácticas de internet.</li>
+                <li>Utilizar las computadoras de los visitantes para hacer minería de criptomonedas.</li>
+                <li>Recibir ataques DDoS que pueden alentar tu página o hacer que deje de funcionar de manera inesperada, haciéndola inaccesible para los visitantes.</li>
+                <li>Realizar descargas de software malicioso.</li>
+            </ul>
+        </section>
+
+        <section class="servicio">
+            <h2>Redes Sociales</h2>
+            <p>Puedes contactarnos en nuestras redes sociales</p>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://web.whatsapp.com/"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+        </section>
+        <!-- Agregar más servicios según sea necesario -->
+    </main>
+    <section class="comentarios">
+        <h2>Comentarios de Clientes</h2>
+        <form id="comentario-form">
+            <textarea id="comentario" placeholder="Escribe tu comentario"></textarea>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+        <div class="lista-comentarios">
+            <!-- Aquí se mostrarán los comentarios ingresados por los usuarios -->
+        </div>
+    </section>
+    
+    
+
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <h3>Libros de Lectura</h3>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Pregunta Frecuntes</a></li>
+                    <li><a href="#">Politicas de Devolucion</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Otros Enlaces</h3>
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <br><p>&copy; 2023  Copyright. Todos los derechos reservados.</p>
+        <br><p xmlns:cc="http://creativecommons.org/ns#" >licencia <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom ;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text -abajo;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+
+
+    </footer>
+    
+    <script src="js/scriptser.js"></script>
+</body>
+</html>
