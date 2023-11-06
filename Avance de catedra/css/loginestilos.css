@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+<<<<<<< HEAD
     list-style: none;
+=======
+>>>>>>> 2009a1e8546de2b99917628cc49cef281fa6a6d6
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,6 +18,7 @@ body{
     background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 img {
     max-width: 100%;
 }
@@ -160,6 +164,8 @@ th, td {
 
 
 
+=======
+>>>>>>> 2009a1e8546de2b99917628cc49cef281fa6a6d6
 main{
     width: 100%;
     padding: 20px;
@@ -168,8 +174,11 @@ main{
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2009a1e8546de2b99917628cc49cef281fa6a6d6
 .contenedor__todo{
     width: 100%;
     max-width: 800px;
@@ -292,6 +301,7 @@ main{
 
 
 
+<<<<<<< HEAD
 footer{
     padding: 50px 0;
     background-color: #111111;
@@ -327,6 +337,8 @@ footer{
 
 
 
+=======
+>>>>>>> 2009a1e8546de2b99917628cc49cef281fa6a6d6
 @media screen and (max-width: 850px){
 
     main{
@@ -357,6 +369,7 @@ footer{
     .contenedor__login-register form{
         position: relative;
     }
+<<<<<<< HEAD
 
 
 
@@ -369,4 +382,6 @@ footer{
         text-align: center;
     }
 
+=======
+>>>>>>> 2009a1e8546de2b99917628cc49cef281fa6a6d6
 }
